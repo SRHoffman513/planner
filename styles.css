@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #eee;
+}
+
+#app {
+    width: 100%;
+    max-width: min(90vw, 520px);
+    padding: 10px;
+}
+
+/* Month page */
+#monthView {
+    background-image: url("../Images/Floral_Background_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Day page */
+#dayView {
+    background-image: url("../Images/Floral_Background_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Month Header */
+#monthLabel {
+    color: #dacdc7;
+    text-align: center;
+}
+
+/* Calendar grid */
+#calendarHeaders {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #dacdc733;
+    margin-bottom: 6px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #dacdc766;
+}
+
+.day {
+    border: 1px solid #dacdc7;
+    background-color: #dacdc7cc;
+    padding: 5px;
+    text-align: right;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.day:hover {
+    background-color: #dacdc7;
+}
+
+.header {
+    background-color: #dacdc7;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2px 0;
+}
+
+/* Hourly planner */
+#hourlyPlanner {
+    width: 100%;
+    background-color: #335954;
+}
+
+/* Day Header */
+#dayLabel {
+    color: #eee;
+    text-align: center;
+}
+
+.hour {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    color: #eee;
+    text-align: center;
+}
+
+.time {
+    width: 60px;
+    font-weight: bold;
+}
+
+.slot {
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    text-align: left;
+}
